@@ -2,7 +2,7 @@
 <module type="Flex" version="4">
   <component name="FlexBuildConfigurationManager" active="bridge-test-default">
     <configurations>
-      <configuration name="bridge-test-default" target-platform="Mobile" pure-as="true" output-type="Library" output-file="bridge-test-default.swc" output-folder="$MODULE_DIR$/../build/temp/default">
+      <configuration name="bridge-test-default" target-platform="Mobile" pure-as="true" output-type="Library" output-file="bridge-test-default.swc" output-folder="$MODULE_DIR$/../../build/temp/default">
         <dependencies target-player="19.0">
           <sdk name="19.0.0" />
         </dependencies>

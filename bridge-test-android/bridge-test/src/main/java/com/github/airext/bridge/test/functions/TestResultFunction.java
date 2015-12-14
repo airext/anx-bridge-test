@@ -6,8 +6,7 @@ import com.adobe.fre.FREObject;
 import com.adobe.fre.FREWrongThreadException;
 import com.github.airext.bridge.Bridge;
 import com.github.airext.bridge.Call;
-import com.github.airext.bridge.test.BridgeTest;
-import com.github.airext.bridge.test.data.BridgeTestResultValue;
+import com.github.airext.bridge.test.data.TestValueObject;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -27,9 +26,9 @@ public class TestResultFunction implements FREFunction
             @Override
             public void run()
             {
-//                BridgeTestResultValue value = new BridgeTestResultValue("{\"status\":200, \"message\":\"Data sent successfully\"}");
+                TestValueObject value = new TestValueObject("{\"status\":200, \"message\":\"Data sent successfully\"}");
 
-                call.result("{\"status\":200, \"message\":\"Data sent successfully\"}");
+                call.result(value);
             }
         }, 2000);
 

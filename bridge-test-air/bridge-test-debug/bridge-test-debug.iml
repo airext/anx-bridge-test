@@ -2,7 +2,7 @@
 <module type="Flex" version="4">
   <component name="FlexBuildConfigurationManager" active="bridge-test-debug">
     <configurations>
-      <configuration name="bridge-test-debug" target-platform="Mobile" main-class="BridgeTestDebug" output-file="NativeSettingsDebug.swf" output-folder="$MODULE_DIR$/../native-settings-debug/bin-debug">
+      <configuration name="bridge-test-debug" target-platform="Mobile" main-class="BridgeTestDebug" output-file="NativeSettingsDebug.swf" output-folder="$MODULE_DIR$/bin-debug">
         <dependencies target-player="20.0">
           <entries>
             <entry library-id="761de017-82f2-46e0-aeff-922bbd35957b">
@@ -46,11 +46,11 @@
       <library type="flex">
         <properties id="29448829-e540-4a33-bc02-55b127c20c6a" />
         <CLASSES>
-          <root url="file://$USER_HOME$/dev/airext/anx-bridge/bin" />
+          <root url="file://$MODULE_DIR$/../../../anx-bridge/bin" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
-        <jarDirectory url="file://$USER_HOME$/dev/airext/anx-bridge/bin" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/../../../anx-bridge/bin" recursive="false" />
       </library>
     </orderEntry>
   </component>

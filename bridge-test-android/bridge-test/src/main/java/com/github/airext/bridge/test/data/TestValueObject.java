@@ -9,9 +9,9 @@ import com.github.airext.bridge.CallResultValue;
 /**
  * Created by mobitile on 12/11/15.
  */
-public class BridgeTestResultValue implements CallResultValue
+public class TestValueObject implements CallResultValue
 {
-    public BridgeTestResultValue(String value)
+    public TestValueObject(String value)
     {
         this.value = value;
     }
