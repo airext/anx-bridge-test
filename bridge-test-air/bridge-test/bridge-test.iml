@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="Flex" version="4">
+  <component name="FlexBuildConfigurationManager" active="bridge-test">
+    <configurations>
+      <configuration name="bridge-test" target-platform="Mobile" pure-as="true" output-type="Library" output-file="bridge-test.swc" output-folder="$MODULE_DIR$/../build/temp/swc">
+        <dependencies target-player="19.0">
+          <entries>
+            <entry library-id="8baebce2-dd72-4139-98ed-e47001cdf825">
+              <dependency linkage="External" />
+            </entry>
+          </entries>
+          <sdk name="19.0.0" />
+        </dependencies>
+        <compiler-options />
+        <packaging-air-desktop />
+        <packaging-android />
+        <packaging-ios />
+      </configuration>
+    </configurations>
+    <compiler-options />
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="jdk" jdkName="19.0.0" jdkType="Flex SDK Type (new)" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="8baebce2-dd72-4139-98ed-e47001cdf825" />
+        <CLASSES>
+          <root url="jar://$USER_HOME$/dev/airext/anx-bridge/bin/anx-bridge.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>

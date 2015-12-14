@@ -1,0 +1,2 @@
+//include ':app', ':native-settings'
+include ':bridge-test'

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark">
+
+    <fx:Script>
+        <![CDATA[
+        import com.github.airext.bridge.test.BridgeTest;
+
+        import spark.components.Alert;
+
+        private var _test:BridgeTest;
+
+        public function get test():BridgeTest
+        {
+            if (_test == null)
+            {
+                _test = new BridgeTest();
+            }
+
+            return _test;
+        }
+
+        private function checkSupport():void {
+            Alert.show(String(BridgeTest.isSupported()));
+        }
+
+        private function extensionVersion():void {
+            Alert.show(String(BridgeTest.extensionVersion()));
+        }
+
+        private function testResult():void
+        {
+            test.testResult(function(error:Error = null, value:Object = null):void
+            {
+                trace(error || value);
+            });
+        }
+
+        private function testError():void
+        {
+            test.testError(function(error:Error = null, value:Object = null):void
+            {
+                trace(error || value);
+            });
+        }
+        ]]>
+    </fx:Script>
+
+    <fx:Declarations>
+
+    </fx:Declarations>
+
+    <s:layout>
+        <s:VerticalLayout horizontalAlign="justify" gap="30" paddingTop="30" />
+    </s:layout>
+
+    <s:Button label="Is Supported" click="checkSupport();" />
+
+    <s:Button label="Extension Version" click="extensionVersion();" />
+
+    <s:Button label="Test Result" click="testResult();" />
+    <s:Button label="Test Error" click="testError();" />
+
+</s:Application>

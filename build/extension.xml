@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension xmlns="http://ns.adobe.com/air/extension/4.0">
+  <id>com.github.airext.bridge.test</id>
+  <versionNumber>0.0.2</versionNumber>
+  <platforms>
+    <platform name="iPhone-ARM">
+      <applicationDeployment>
+        <nativeLibrary>libANXBridgeTest.a</nativeLibrary>
+        <initializer>ANXBridgeTestInitializer</initializer>
+        <finalizer>ANXBridgeTestFinalizer</finalizer>
+      </applicationDeployment>
+    </platform>
+    <platform name="iPhone-x86">
+      <applicationDeployment>
+        <nativeLibrary>libANXBridgeTestSimulator.a</nativeLibrary>
+        <initializer>ANXBridgeTestInitializer</initializer>
+        <finalizer>ANXBridgeTestFinalizer</finalizer>
+      </applicationDeployment>
+    </platform>
+    <platform name="Android-ARM">
+      <applicationDeployment>
+        <nativeLibrary>libANXBridgeTest.jar</nativeLibrary>
+        <initializer>com.github.airext.bridge.test.BridgeTest</initializer>
+        <finalizer>com.github.airext.bridge.test.BridgeTest</finalizer>
+      </applicationDeployment>
+    </platform>
+    <platform name="Android-x86">
+      <applicationDeployment>
+        <nativeLibrary>libANXBridgeTest.jar</nativeLibrary>
+        <initializer>com.github.airext.bridge.test.BridgeTest</initializer>
+        <finalizer>com.github.airext.bridge.test.BridgeTest</finalizer>
+      </applicationDeployment>
+    </platform>
+    <platform name="default">
+      <applicationDeployment />
+    </platform>
+  </platforms>
+</extension>
